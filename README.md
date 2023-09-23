@@ -1,25 +1,43 @@
-## Mission ##
+## Project Mission: Spam Message Classification ##
 
-Spam detection is one of the major applications of Machine Learning in the interwebs today. Pretty much all of the major email service providers have spam detection systems built in and automatically classify such mail as 'Junk Mail'. 
+Spam detection is a crucial application of Machine Learning online, particularly in email services where messages are automatically flagged as 'Junk Mail.' In this mission, we leverage the Naive Bayes algorithm to create a model capable of classifying SMS messages as spam or not based on training data. The intuition behind spam messages includes words like 'free,' 'win,' 'cash,' and excessive capitalization and exclamation marks.
 
-In this mission we will be using the Naive Bayes algorithm to create a model that can classify [dataset](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection) SMS messages as spam or not spam, based on the training we give to the model. It is important to have some level of intuition as to what a spammy text message might look like. Usually they have words like 'free', 'win', 'winner', 'cash', 'prize' and the like in them as these texts are designed to catch your eye and in some sense tempt you to open them. Also, spam messages tend to have words written in all capitals and also tend to use a lot of exclamation marks. To the recipient, it is usually pretty straightforward to identify a spam text and my objective here is to train a model to do that for us!
+This project involves binary classification, categorizing messages as 'Spam' or 'Not Spam,' and is supervised learning since we use labeled data to train the model.
 
-Being able to identify spam messages is a binary classification problem as messages are classified as either 'Spam' or 'Not Spam' and nothing else. Also, this is a supervised learning problem, as we will be feeding a labelled dataset into the model, that it can learn from, to make future predictions. 
+# Project Overview:
 
-# Overview
+This project unfolds in several steps:
 
-This project has been broken down in to the following steps: 
-
-- Step 0: Introduction to the Naive Bayes Theorem
-- Step 1.1: Understanding thr dataset
+- Step 0: Introduction to Naive Bayes Theorem
+- Step 1.1: Understanding the dataset
 - Step 1.2: Data Preprocessing
-- Step 2.1: Bag of Words(BoW)
+- Step 2.1: Bag of Words (BoW) concept
 - Step 2.2: Implementing BoW from scratch
-- Step 2.3: Implementing Bag of Words in scikit-learn
-- Step 3.1: Training and testing sets
-- Step 3.2: Applying Bag of Words processing to the dataset.
-- Step 4.1: Bayes Theorem implementation from scratch
-- Step 4.2: Naive Bayes implementation from scratch
-- Step 5: Naive Bayes implementation using scikit-learn
-- Step 6: Evaluating my model
+- Step 2.3: Using Bag of Words in scikit-learn
+- Step 3.1: Preparing training and testing sets
+- Step 3.2: Applying Bag of Words to the dataset
+- Step 4.1: Implementing Bayes Theorem from scratch
+- Step 4.2: Implementing Naive Bayes from scratch
+- Step 5: Implementing Naive Bayes using scikit-learn
+- Step 6: Evaluating the model's performance
 - Step 7: Conclusion
+
+# Running the Code in Jupyter Notebook:
+
+To run this project in a Jupyter Notebook environment, follow these steps:
+
+1. **Installation**: Ensure you have Python and Jupyter Notebook installed. If not, you can install them using Anaconda or pip.
+
+2. **Library Installation**: Install the required libraries by running the following commands in your Jupyter Notebook cell:
+   
+   ```python
+   !pip install pandas numpy scikit-learn
+   ```
+
+3. **Notebook Execution**: Open the Jupyter Notebook and execute each cell sequentially, following the steps outlined in the project. Make sure to read the comments and explanations within the code cells for better understanding.
+
+4. **Model Evaluation**: After implementing the model, evaluate its performance using appropriate metrics as described in "Step 6: Evaluating the model's performance."
+
+5. **Conclusion**: Finally, refer to "Step 7: Conclusion" for insights and conclusions drawn from the project.
+
+By following these steps, you can successfully run and understand the spam message classification project in your Jupyter Notebook environment.
